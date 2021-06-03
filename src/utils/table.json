@@ -1,13 +1,13 @@
 {
   "tableHeader": [
     {
-      "code": "name", 
-      "label": "姓名", 
+      "code": "name",
+      "label": "姓名",
       "width": "180",
       "minWidth": "",
       "align": "center",
       "rowStyle": "oneRow",
-      "taskNameHover":"taskName"
+      "taskNameHover": "taskName"
     },
     {
       "code": "content",
@@ -34,6 +34,133 @@
       "name": "李小虎",
       "address": "上海市普陀区金沙江路 1518 弄",
       "content": "内容内容内容内容内容内容内容内容"
+    }
+  ],
+  "questionType": [
+    {
+      "label": "单选题",
+      "value": 1
+    },
+    {
+      "label": "多选题",
+      "value": 2
+    },
+    {
+      "label": "判断题",
+      "value": 3
+    },
+    {
+      "label": "填空题",
+      "value": 4
+    }
+  ],
+  "question": [
+    {
+      "label": "A",
+      "content": ""
+    },
+    {
+      "label": "B",
+      "content": ""
+    },
+    {
+      "label": "C",
+      "content": ""
+    },
+    {
+      "label": "D",
+      "content": ""
+    }
+  ],
+  "letter": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "formData": [
+    {
+      "label": "字符串类型",
+      "type": "input",
+      "required": true,
+      "value":"",
+      "rulse": [
+        { "required": true, "message": "请输入字符串类型", "trigger": "blur" },
+        {
+          "min": 3,
+          "max": 5,
+          "message": "长度在 3 到 5 个字符",
+          "trigger": "blur"
+        }
+      ]
+    },
+    {
+      "label": "数字类型",
+      "type": "number",
+      "required": true,
+      "value":"",
+      "rulse": [
+        { "required": true, "message": "请输入数字类型"},
+        {
+          "type": "number",
+          "message": "必须输入数字值"
+        }
+      ]
+    },
+    {
+      "label": "多选类型",
+      "type": "checkbox",
+      "required": true,
+      "value":[],
+      "option":[
+        {
+          "label": "A",
+          "value": "1"
+        },
+        {
+          "label": "B",
+          "value": "2"
+        },
+        {
+          "label": "C",
+          "value": "3"
+        },
+        {
+          "label": "D",
+          "value": "4"
+        }
+      ],
+      "rulse": 
+        { "required": true, "message": "请选择多选类型"}
+    },
+    {
+      "label": "单选类型",
+      "type": "radio",
+      "required": true,
+      "value":[],
+      "option":[
+        {
+          "label": "A",
+          "value": "1"
+        },
+        {
+          "label": "B",
+          "value": "2"
+        },
+        {
+          "label": "C",
+          "value": "3"
+        },
+        {
+          "label": "D",
+          "value": "4"
+        }
+      ],
+      "rulse": 
+        { "required": true, "message": "请选择单选类型"}
     }
   ]
 }

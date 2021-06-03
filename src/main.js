@@ -8,7 +8,7 @@ Vue.use( animated );
 
 
 import ElementUI from 'element-ui';
-Vue.use( ElementUI );
+Vue.use( ElementUI, {size: 'small'} );
 import 'element-ui/lib/theme-chalk/index.css';
 new Vue( {
   router,
